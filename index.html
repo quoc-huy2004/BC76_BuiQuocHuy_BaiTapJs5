@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="bai1-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#bai1-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="bai1-tab-pane"
+          aria-selected="true"
+        >
+          Bài 1
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="bai2-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#bai2-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="bai2-tab-pane"
+          aria-selected="false"
+        >
+          Bài 2
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="bai3-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#bai3-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="bai3-tab-pane"
+          aria-selected="false"
+        >
+          Bài 3
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="bai4-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#bai4-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="bai4-tab-pane"
+          aria-selected="false"
+        >
+          Bài 4
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="bai1-tab-pane"
+        role="tabpanel"
+        aria-labelledby="bai1-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <h2 class="py-5">Bài 1: Quản lí tuyển sinh</h2>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemChuan"
+              aria-describedby="helpId"
+              placeholder="Vui lòng nhập điểm chuẩn"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemToan"
+              aria-describedby="helpId"
+              placeholder="Vui lòng nhập điểm Toán"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemVan"
+              aria-describedby="helpId"
+              placeholder="Vui lòng nhập điểm Văn"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="diemAnh"
+              aria-describedby="helpId"
+              placeholder="Vui lòng nhập điểm Anh"
+            />
+          </div>
+          <div class="container py-5">
+            <label for="chonKhuVuc"> <h3>Chọn khu vực</h3></label>
+            <select class="form-control" id="khuVuc">
+              <option value="0">X</option>
+              <option value="2">A</option>
+              <option value="1">B</option>
+              <option value="0.5">C</option>
+            </select>
+          </div>
+          <div class="container py-5">
+            <label for="chonKhuVuc"> <h3>Chọn đối tượng</h3></label>
+            <select class="form-control" id="doiTuong">
+              <option value="0">0</option>
+              <option value="2.5">1</option>
+              <option value="1.5">2</option>
+              <option value="1">3</option>
+            </select>
+          </div>
+          <button class="btn btn-dark">Kết quả</button>
+          <p class="ketQua bg-secondary bg-opacity-75 p-2 text-white mt-2"></p>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="bai2-tab-pane"
+        role="tabpanel"
+        aria-labelledby="bai2-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <h2 class="py-5">Bài 2: Tính tiền điện</h2>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen"
+              aria-describedby="helpId"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKw"
+              aria-describedby="helpId"
+              placeholder="Nhập số kw"
+            />
+          </div>
+          <button class="btn btn-primary">Tính tiền điện</button>
+          <p class="ketQua2 bg-secondary bg-opacity-75 p-2 text-white mt-2"></p>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai3-tab-pane"
+        role="tabpanel"
+        aria-labelledby="bai3-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <h2>Bài 3: Tính thuế thu nhập cá nhân</h2>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="hoTen1"
+              aria-describedby="helpId"
+              placeholder="Nhập họ tên"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="tongThuNhapNam"
+              aria-describedby="helpId"
+              placeholder="Nhập tổng thu nhập năm"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soNguoiPhuThuoc"
+              aria-describedby="helpId"
+              placeholder="Nhập số người phụ thuộc"
+            />
+          </div>
+          <button class="btn btn-danger my-2">Tính thuế</button>
+          <p class="ketQua3 bg-secondary bg-opacity-75 p-2 text-white mt-2"></p>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai4-tab-pane"
+        role="tabpanel"
+        aria-labelledby="bai4-tab"
+        tabindex="0"
+      >
+        <div class="container py-5">
+          <h2>Bài 4: Tính tiền cáp</h2>
+          <div class="mb-3">
+            <label for="chonKhachHang">
+            <select class="form-control" id="chonKhachHang"> 
+              <option value="">Chọn loại khách hàng</option>
+              <option value="nhaDan">Nhà dân</option>
+              <option value="doanhNghiep">Doanh nghiệp</option>
+            </select>
+          </div>
+          <div class="mb-3" id="soKetNoiContainer" style="display: none;">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKetNoi"
+              aria-describedby="helpId"
+              placeholder="Nhập số kết nối"
+              disabled
+            />
+    
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="maKhachHang"
+              aria-describedby="helpId"
+              placeholder="Nhập mã khách hàng"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="soKenhCaoCap"
+              aria-describedby="helpId"
+              placeholder="Nhập số kênh cao cấp"
+            />
+          </div>
+          <button class="btn btn-success">Tính tiền cáp</button>
+          <p class="ketQua4 bg-secondary bg-opacity-75 p-2 text-white mt-2"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
